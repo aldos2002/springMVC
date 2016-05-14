@@ -2,9 +2,11 @@ package com.epam.app.service;
 
 import com.epam.app.dao.MovieDao;
 import com.epam.app.model.Movie;
+import com.epam.app.model.Role;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Service("movieService")

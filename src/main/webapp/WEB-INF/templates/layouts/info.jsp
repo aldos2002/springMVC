@@ -15,6 +15,8 @@
         </c:if>
 
         <h1>Movie Detail</h1>
+        <b>Your role (kept for the session)</b>:</b>
+        <label>${role}</label>
         <br/>
             <table border="1">
                 <tr>

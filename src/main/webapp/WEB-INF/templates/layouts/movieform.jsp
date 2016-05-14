@@ -11,9 +11,13 @@
         <c:choose>
             <c:when test="${movieForm['new']}">
                 <h1>Add Movie</h1>
+                <b>Your role (kept for the session)</b>:</b>
+                <label>${role}</label>
             </c:when>
             <c:otherwise>
                 <h1>Update Movie</h1>
+                <b>Your role (kept for the session)</b>:</b>
+                <label>${role}</label>
             </c:otherwise>
         </c:choose>
         <br/>

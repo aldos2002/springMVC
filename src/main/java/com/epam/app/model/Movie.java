@@ -1,11 +1,16 @@
 package com.epam.app.model;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement(name = "movie")
 public class Movie {
     Integer id;
     String name;
     String director;
     String year;
 
+    @XmlElement
     public boolean isNew() {
         return (this.id == null);
     }
@@ -14,6 +19,7 @@ public class Movie {
         return id;
     }
 
+    @XmlElement
     public void setId(Integer id) {
         this.id = id;
     }
@@ -22,6 +28,7 @@ public class Movie {
         return name;
     }
 
+    @XmlElement
     public void setName(String name) {
         this.name = name;
     }
@@ -30,6 +37,7 @@ public class Movie {
         return director;
     }
 
+    @XmlElement
     public void setDirector(String director) {
         this.director = director;
     }
@@ -38,6 +46,7 @@ public class Movie {
         return year;
     }
 
+    @XmlElement
     public void setYear(String year) {
         this.year = year;
     }

@@ -13,7 +13,11 @@ import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.HashMap;
@@ -96,4 +100,26 @@ public class MovieDaoImpl implements MovieDao {
             return movie;
         }
     }
+
+//    @Override
+//    public Movie addMovie(Movie movie, MultipartFile multipartFile) {
+//        if (!multipartFile.isEmpty()) {
+//            try {
+//                byte[] bytes = multipartFile.getBytes();
+//                File dir = new File(picsDir);
+//                if (!dir.exists()) {
+//                    dir.mkdir();
+//                }
+//                File file = new File(picsDir + File.separator + multipartFile.getOriginalFilename());
+//                FileOutputStream fos = new FileOutputStream(file);
+//                fos.write(bytes);
+//                fos.close();
+//                movie.setImagePath(picsUrl + multipartFile.getOriginalFilename());
+//            } catch (IOException e) {
+//                logger.error(e.getMessage(), e);
+//            }
+//        }
+//        em.persist(meal);
+//        return meal;
+//    }
 }

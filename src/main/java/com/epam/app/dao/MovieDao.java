@@ -2,6 +2,7 @@ package com.epam.app.dao;
 
 import com.epam.app.model.Movie;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 public interface MovieDao {
@@ -16,4 +17,5 @@ public interface MovieDao {
 
     void delete(Integer id);
 
+//    void addMovie(Movie movie, HttpServletRequest req);
 }

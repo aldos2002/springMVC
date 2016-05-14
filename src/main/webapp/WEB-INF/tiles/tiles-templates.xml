@@ -27,6 +27,16 @@
         <put-attribute name="content" value="/WEB-INF/templates/layouts/movieform.jsp" />
     </definition>
 
+    <definition name="warning" extends="base-template">
+        <put-attribute name="title" value="View: warning" />
+        <put-attribute name="content" value="/WEB-INF/templates/layouts/warning.jsp" />
+    </definition>
+
+    <definition name="uploadform" extends="base-template">
+        <put-attribute name="title" value="View: uploadform" />
+        <put-attribute name="content" value="/WEB-INF/templates/layouts/uploadform.jsp" />
+    </definition>
+
     <definition name="error" extends="base-template">
         <put-attribute name="title" value="View: error" />
         <put-attribute name="content" value="/WEB-INF/templates/layouts/error.jsp" />
