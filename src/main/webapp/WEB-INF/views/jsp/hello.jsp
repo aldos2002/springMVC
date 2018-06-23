@@ -20,7 +20,7 @@
 </nav>
  
 <div class="jumbotron">
-  <div class="container">
+  <div id="my_name" class="container">
 	<h1>${title}</h1>
 	<p>
 		<c:if test="${not empty name}">

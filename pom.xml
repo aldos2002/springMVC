@@ -27,7 +27,22 @@
 			<version>${jstl.version}</version>
 		</dependency>
 
-	</dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide</artifactId>
+            <version>2.14</version>
+            <scope>test</scope>
+        </dependency>
+
+
+</dependencies>
 
 	<build>
 
