@@ -1,17 +1,12 @@
-package com.mkyong.web.controller.steps;
+package steps;
 
-import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selenide;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
-import junit.framework.TestCase;
-import org.junit.Test;
 import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
-import static org.junit.Assert.*;
 
 /**
  * Created by admin
