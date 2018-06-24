@@ -34,7 +34,7 @@ public class HelloControllerTest {
     public void openSpringMVCWebapp(String name) {
         System.setProperty("webdriver.chrome.driver", "..\\chromedriver.exe");
         System.setProperty("selenide.browser", "Chrome");
-        open("http://spring3-mvc-maven-xml-hello-world-master_tomcat_1:8080/myapp/hello/" + name);
+        open("http://tomcat:8080/myapp/hello/" + name);
     }
 
     @Then("^loaded page should print out \"([^\"]*)\"$")
