@@ -34,5 +34,5 @@ services:
         image: "tomcat:8.0"
         ports:
          - "8888:8080"
-         volumes:
+        volumes:
          - "f:/docker/tomcat/conf:/usr/local/tomcat/conf"

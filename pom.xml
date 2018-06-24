@@ -41,7 +41,12 @@
             <scope>test</scope>
         </dependency>
 
-
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-java8</artifactId>
+            <version>1.2.3</version>
+            <scope>test</scope>
+        </dependency>
 </dependencies>
 
 	<build>
@@ -86,7 +91,7 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
                 <configuration>
-                    <url>http://tomcat:8080/manager/text</url>
+                    <url>http://spring3-mvc-maven-xml-hello-world-master_tomcat_1:8080/manager/text</url>
                     <server>TomcatServer</server>
                     <path>/myapp</path>
                 </configuration>
