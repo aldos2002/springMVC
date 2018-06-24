@@ -1,12 +1,17 @@
 package steps;
 
+import com.codeborne.selenide.WebDriverRunner;
+import com.gargoylesoftware.htmlunit.BrowserVersion;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.openqa.selenium.By;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
+import static com.codeborne.selenide.WebDriverRunner.setWebDriver;
 
 /**
  * Created by admin
@@ -27,8 +32,12 @@ public class HelloControllerTest {
 
     @Given("^open spring-mvc webapp hello rest service with name parameter \"([^\"]*)\"$")
     public void openSpringMVCWebapp(String name) {
-        System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
-        System.setProperty("selenide.browser", "Chrome");
+//        System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
+//        System.setProperty("selenide.browser", "Chrome");
+        HtmlUnitDriver driver = new HtmlUnitDriver();
+        driver.setJavascriptEnabled(true);
+        setWebDriver(driver);
+
         open("http://tomcat:8080/myapp/hello/" + name);
     }
 
