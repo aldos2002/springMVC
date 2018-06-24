@@ -32,7 +32,7 @@ public class HelloControllerTest {
 
     @Given("^open spring-mvc webapp hello rest service with name parameter \"([^\"]*)\"$")
     public void openSpringMVCWebapp(String name) {
-        System.setProperty("webdriver.chrome.driver", "..\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
         System.setProperty("selenide.browser", "Chrome");
         open("http://tomcat:8080/myapp/hello/" + name);
     }
